@@ -9,6 +9,6 @@ variable "bucket_name" {
 }
 
 variable "cidr_block" {
-  description = "This is cidr block for vpc block"
+  description = "Thihs is cidr block for vpc block"
   type = string
 }

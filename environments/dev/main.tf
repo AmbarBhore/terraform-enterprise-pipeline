@@ -15,3 +15,9 @@ module "dev_iam_user" {
    source = "../../modules/iam"
    user_name = var.user_name
 }
+
+module "bucket_name" {
+   source = "../../modules/s3"
+   bucket_name = var.bucket_name
+}
+

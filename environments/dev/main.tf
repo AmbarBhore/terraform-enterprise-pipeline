@@ -19,5 +19,6 @@ module "dev_iam_user" {
 module "bucket_name" {
    source = "../../modules/s3"
    bucket_name = var.bucket_name
+   region = var.region
 }
 

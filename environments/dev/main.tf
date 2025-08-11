@@ -13,4 +13,5 @@ provider "aws" {
 
 module "dev_iam_user" {
    source = "../../modules/iam"
+   user_name = var.user_name
 }

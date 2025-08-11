@@ -7,3 +7,8 @@ variable "bucket_name" {
   description = "This is bucket name variable"
   type = string
 }
+
+variable "cidr_block" {
+  description = "This is cidr block for vpc block"
+  type = string
+}

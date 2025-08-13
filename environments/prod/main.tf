@@ -9,6 +9,7 @@ terraform {
 
 provider "aws" {
   region = "ap-south-1"
+  profile = "prod-profile"
 }
 
 module "prod_iam_user" {

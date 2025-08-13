@@ -8,5 +8,6 @@ resource "aws_s3_bucket" "example" {
       team = "finance"
       owner = "DevOps"
       role = "Director"
+      type = "logging"
    }
 }

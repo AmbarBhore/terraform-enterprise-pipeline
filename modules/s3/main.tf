@@ -4,4 +4,5 @@ resource "aws_s3_bucket" "example" {
    tags = {
       owner = "DevOps"
       role = "Director"
-}	
+   }
+}

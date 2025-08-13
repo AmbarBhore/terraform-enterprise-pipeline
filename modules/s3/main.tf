@@ -9,6 +9,6 @@ resource "aws_s3_bucket" "example" {
       owner = "DevOps"
       role = "Director"
       school = "english"
-      college = "engineering"
+      college = "engineerin"
    }
 }

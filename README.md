@@ -1,1 +1,1 @@
-Adding the readme file for trigger
+Aadding the readme file for trigger

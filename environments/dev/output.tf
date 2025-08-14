@@ -9,3 +9,7 @@ output "dev_iam_user_name" {
 output "dev_vpc" {
    value = module.vpc_project.dev_vpc
 }
+
+output "dev_subnet" {
+   value = module.vpc_project.public_subnet
+}

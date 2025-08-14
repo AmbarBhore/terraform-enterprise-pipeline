@@ -21,7 +21,7 @@ module "bucket_name" {
    bucket_name = var.bucket_name
 }
 
-#module "vpc_project" {
-#   source = "../../modules/vpc"
-#   cidr_block = var.cidr_block
-#}
+module "vpc_project" {
+   source = "../../modules/vpc"
+   cidr_block = var.cidr_block
+}

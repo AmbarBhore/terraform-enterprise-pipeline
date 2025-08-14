@@ -4,3 +4,10 @@ resource "aws_vpc" "project_vpc" {
     Name = "project_vpc"
   }
 }
+
+resource "aws_internet_gateway" "gw" {
+   vpc_id = aws_vpc.project_vpc.id
+   tags = {
+     Name = "project_IGW"
+   }
+}

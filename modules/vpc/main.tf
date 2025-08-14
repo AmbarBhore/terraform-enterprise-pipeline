@@ -5,10 +5,10 @@ resource "aws_vpc" "dev_vpc" {
   }
 }
 
-#resource "aws_internet_gateway" "gw" {
-#   vpc_id = aws_vpc.dev_vpc.id
-#   tags = {
-#     Name = "project_IGW"
-#     Owner = "Ambar"
-#   }
-#}
+resource "aws_internet_gateway" "gw" {
+   vpc_id = aws_vpc.dev_vpc.id
+   tags = {
+     Name = "project_IGW"
+     Owner = "Ambar"
+   }
+}

@@ -24,5 +24,4 @@ module "bucket_name" {
 module "vpc_project" {
    source = "../../modules/vpc"
    cidr_block = var.cidr_block
-   public_subnet_cidr_block = var.public_subnet_cidr_block 
 }

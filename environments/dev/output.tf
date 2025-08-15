@@ -23,7 +23,7 @@ output "public_route_table" {
 }
 
 output "public_ip" {
-   value = module.vpc_project.public.ip
+   value = module.vpc_project.public_ip
 }
 
 output "private_route_table" {

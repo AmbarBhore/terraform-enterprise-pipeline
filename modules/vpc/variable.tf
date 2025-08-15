@@ -8,6 +8,11 @@ variable "public_subnet_cidr_block" {
   type = string
 }
 
+variable "private_subnet_cidr_block" {
+  description = "cidr value for private subnet"
+  type = string
+}
+
 variable "tags" {
    type = map(string)
    default = {}

@@ -51,7 +51,7 @@ resource "aws_route_table" "private_rt" {
    
    route { 
       cidr_block = "0.0.0.0/0" 
-      gateway_id = aws_nat_gateway.nat.id 
+      nat_gateway_id = aws_nat_gateway.nat.id 
    } 
    depends_on = [aws_nat_gateway.nat]
    tags = merge(var.tags, { Name = "Private_Route_Table" }) 

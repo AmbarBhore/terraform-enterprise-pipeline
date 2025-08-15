@@ -1,6 +1,10 @@
 resource "aws_vpc" "dev_vpc" {
    cidr_block = var.cidr_block
    tags       = merge(var.tags, { Name = "dev-vpc" })
+   
+   lifecycle {
+      create_before_destroy = true
+   }
 }
 
 resource "aws_internet_gateway" "gw" {

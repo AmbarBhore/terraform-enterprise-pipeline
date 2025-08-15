@@ -17,3 +17,7 @@ output "dev_subnet" {
 output "dev_private_subnet" {
    value = module.vpc_project.private_subnet
 }
+
+output "public_route_table" {
+   value = module.vpc_project.public_rt
+}

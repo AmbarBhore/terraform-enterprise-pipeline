@@ -21,3 +21,15 @@ output "dev_private_subnet" {
 output "public_route_table" {
    value = module.vpc_project.public_rt
 }
+
+output "public_ip" {
+   value = module.vpc_project.public.ip
+}
+
+output "private_route_table" {
+   value = module.vpc_project.private_rt
+}
+
+output "nat_gateway" {
+   value = module.vpc_project.nat_gateway
+}

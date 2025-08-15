@@ -22,3 +22,11 @@ variable "private_subnet_cidr_block" {
    description = "This CIDR block for private subnet"
    type = string
 }
+
+variable "availability_az" {
+   description = "Availiability zones for subnets"
+   type = object({
+      public_subnet = string
+      private_subnet = string
+   })
+}
